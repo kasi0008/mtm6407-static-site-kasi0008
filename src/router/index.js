@@ -21,7 +21,7 @@ const routes = [
       { path: '', component: About }
     ]
   },
-  // Add routes for other pages
+  
 ]
 
 const router = new VueRouter({

@@ -15,7 +15,7 @@
               <li class="nav-item">
                 <router-link class="nav-link" to="/about">About</router-link>
               </li>
-              <!-- Add links for other pages -->
+              
             </ul>
           </div>
         </div>
@@ -25,6 +25,5 @@
   </template>
   
   <style scoped>
-  /* Add custom styles here */
   </style>
   

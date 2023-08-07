@@ -7,12 +7,12 @@
       <div class="container">
         <h2>About Me</h2>
         <p>I'm a passionate hobbyist with a love for photography, hiking, and painting.</p>
-        <!-- Add more content about yourself and your hobbies -->
+        
       </div>
     </div>
   </template>
   
   <style scoped>
-  /* Add custom styles here */
+  
   </style>
   
