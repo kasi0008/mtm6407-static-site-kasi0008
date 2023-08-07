@@ -2,18 +2,26 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Services from '../views/Services.vue'
-import Portfolio from '../views/Portfolio.vue'
-import Contact from '../views/Contact.vue'
+import LayoutWithNav from '../layouts/LayoutWithNav.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/about', component: About },
-  { path: '/services', component: Services },
-  { path: '/portfolio', component: Portfolio },
-  { path: '/contact', component: Contact },
+  {
+    path: '/',
+    component: LayoutWithNav,
+    children: [
+      { path: '', component: Home }
+    ]
+  },
+  {
+    path: '/about',
+    component: LayoutWithNav,
+    children: [
+      { path: '', component: About }
+    ]
+  },
+  // Add routes for other pages
 ]
 
 const router = new VueRouter({
